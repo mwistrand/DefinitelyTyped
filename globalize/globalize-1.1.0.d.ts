@@ -132,7 +132,7 @@ interface GlobalizeStatic {
 	 * Load resolved or unresolved cldr data.
 	 * Somewhat equivalent to previous Globalize.addCultureInfo(...).
 	 */
-	load(...json: Object[]): void;
+	load(json: Object): void;
 
 	/**
 	 * Globalize.locale()
@@ -328,7 +328,3 @@ interface GlobalizeStatic {
 }
 
 declare var Globalize: GlobalizeStatic;
-
-declare module 'globalize/*' {
-	export = Globalize;
-}
