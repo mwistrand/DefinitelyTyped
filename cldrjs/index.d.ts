@@ -3,12 +3,12 @@
 // Definitions by: Raman But-Husaim <https://github.com/RamanBut-Husaim>, Grégoire Castre <https://github.com/gcastre/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export = self;
+export = Cldr;
 export as namespace Cldr;
 
-declare var self: self.CldrFactory;
+declare var Cldr: Cldr.CldrFactory;
 
-declare namespace self {
+declare namespace Cldr {
     /**
      * @name Attributes
      * @memberof cldr
@@ -267,5 +267,4 @@ declare namespace self {
         once(event:string, listener:(path:string, value:any) => void): void;
         off(event:string, listener:(path:string, value:any) => void): void;
     }
-
 }
